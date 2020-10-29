@@ -1,0 +1,17 @@
+.input {
+   background: $white;
+   border-radius: 21px;
+   border: none;
+   color: $primary;
+   padding: 8px 15px;
+   margin-bottom: 25px;
+   @include fontSize(18, 26, -0.015);
+}
+
+.label {
+   font-weight: 500;
+   color: $white;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+   @include fontSize(18, 26, -0.015);
+}

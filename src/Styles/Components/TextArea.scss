@@ -1,0 +1,7 @@
+.textarea {
+   background: $white;
+   color: $primary;
+   border-radius: 21px;
+   padding: 8px 15px;
+   @include fontSize(18, 26, -0.015);
+}

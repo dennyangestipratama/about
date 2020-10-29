@@ -1,0 +1,42 @@
+.contact {
+   form {
+      display: flex;
+      background: $primary;
+      border: 5px solid $secondary;
+      box-sizing: border-box;
+      border-radius: 33px;
+      padding: 45px 67px;
+   }
+
+   &-input,
+   &-area {
+      width: 100%;
+      @include flexColumn;
+   }
+
+   &-input {
+      margin-right: 50px;
+   }
+
+   &-area {
+      position: relative;
+
+      button {
+         width: 60px;
+         height: 60px;
+         background: $primary;
+         border: 8px solid $secondary;
+         box-sizing: border-box;
+         border-radius: 100%;
+         cursor: pointer;
+
+         @include absolute(auto, 1rem, 1.2rem, auto);
+
+         img {
+            width: 70%;
+            margin: auto;
+         }
+      }
+   }
+
+}

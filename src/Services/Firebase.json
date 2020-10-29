@@ -1,0 +1,105 @@
+{
+   "skills": [
+      {
+         "ID": 1,
+         "name": "React JS",
+         "image": "https://svgshare.com/i/R0m.svg"
+      },
+      {
+         "ID": 2,
+         "name": "JavaScript",
+         "image": "https://svgshare.com/i/R2T.svg"
+      },
+      {
+         "ID": 3,
+         "name": "HTML",
+         "image": "https://svgshare.com/i/R2d.svg"
+      },
+      {
+         "ID": 4,
+         "name": "CSS",
+         "image": "https://svgshare.com/i/R2z.svg"
+      },
+      {
+         "ID": 5,
+         "name": "Node JS",
+         "image": "https://svgshare.com/i/R2U.svg"
+      },
+      {
+         "ID": 6,
+         "name": "Firebase",
+         "image": "https://svgshare.com/i/R2e.svg"
+      },
+      {
+         "ID": 7,
+         "name": "GIT",
+         "image": "https://svgshare.com/i/R1S.svg"
+      },
+      {
+         "ID": 8,
+         "name": "SASS",
+         "image": "https://svgshare.com/i/R1o.svg"
+      },
+      {
+         "ID": 9,
+         "name": "Figma",
+         "image": "https://svgshare.com/i/R1p.svg"
+      },
+      {
+         "ID": 10,
+         "name": "Responsive",
+         "image": "https://svgshare.com/i/R25.svg"
+      }
+   ],
+
+   "projects": [
+      {
+         "ID": 1,
+         "name": "Shapestone",
+         "completed": true,
+         "logoIMG": "https://svgshare.com/i/R1E.svg",
+         "textIMG": "https://svgshare.com/i/R1T.svg",
+         "description": "Landing Page Company Profile Project, build with HTML,CSS, React JS and EmailJS"
+      },
+      {
+         "ID": 2,
+         "name": "Mespo",
+         "completed": false,
+         "logoIMG": "https://svgshare.com/i/R26.svg",
+         "textIMG": "https://svgshare.com/i/R2G.svg",
+         "description": "Project to build dashboard company, build with React Native and React Native for Web"
+      },
+      {
+         "ID": 3,
+         "name": "Doogether",
+         "completed": true,
+         "logoIMG": "https://svgshare.com/i/R20.svg",
+         "textIMG": "https://svgshare.com/i/R0a.svg",
+         "description": "Web for Doogether Company profile, you can book a class from here also."
+      },
+      {
+         "ID": 4,
+         "name": "Doogether",
+         "completed": true,
+         "logoIMG": "https://svgshare.com/i/R20.svg",
+         "textIMG": "https://svgshare.com/i/R0a.svg",
+         "description": "DOOgether Challenge Platform, is a challenge for user to compete with other user to get the grand prize"
+      },
+      {
+         "ID": 5,
+         "name": "Doogether",
+         "completed": true,
+         "logoIMG": "https://svgshare.com/i/R20.svg",
+         "textIMG": "https://svgshare.com/i/R0a.svg",
+         "description": "DOOgether Dashboard Platform, create for Venue, Partner and Admin to handle what they need."
+      },
+      {
+         "ID": 6,
+         "name": "Doogether",
+         "completed": true,
+         "logoIMG": "https://svgshare.com/i/R20.svg",
+         "textIMG": "https://svgshare.com/i/R0a.svg",
+         "description": "Dirumahaja Platform is a web for watching free videos from DOOgether Venue’s Partner"
+      }
+   ]
+}

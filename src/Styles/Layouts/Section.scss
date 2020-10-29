@@ -1,0 +1,40 @@
+.section {
+   position: relative;
+   padding: 20px 155px;
+
+   svg {
+      z-index: -1;
+      @include absolute(3rem, auto, auto, 0)
+   }
+
+   header {
+      .section-title {
+         @include flexCenterVert;
+
+         .title-line {
+            width: 6px;
+            height: 120px;
+            background-color: $secondary;
+            color: $secondary;
+         }
+
+         h1 {
+            margin-left: 25px;
+            color: $primary;
+            text-transform: uppercase;
+            @include fontSize(50, 50, normal);
+         }
+      }
+
+      h2 {
+         max-width: 500px;
+         font-weight: 500;
+         margin-top: 13px;
+         margin-left: (25px+6px);
+         margin-bottom: 60px;
+         color: $primary;
+         @include fontSize(18, 27, 0.04);
+      }
+
+   }
+}

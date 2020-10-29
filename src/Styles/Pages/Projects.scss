@@ -1,0 +1,77 @@
+.section-projects {
+   padding-bottom: 5rem;
+}
+
+
+.projects {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 40px 40px;
+
+   &-card {
+      background: $white;
+      box-shadow: 0px 0px 25px rgba($color: $black, $alpha: 0.05);
+      border-radius: 40px;
+      padding: 32px 35px;
+      @include flexCenterColumn;
+
+      &:hover {
+         box-shadow: 0px 0px 25px 3px rgba($color: $secondary, $alpha: 0.5);
+      }
+
+      &-text {
+         margin: 45px 0 15px 0;
+      }
+
+      h3 {
+         font-weight: normal;
+         color: $primary;
+         @include fontSize(14, 22, normal);
+      }
+
+      button {
+         margin-top: 30px;
+         margin-bottom: 1rem;
+         @include flexCenterVert;
+
+         div {
+            margin-left: 12px;
+         }
+
+         &:hover {
+            // animation: full 0.4s linear forwards;
+
+            // @include keyframes(full) {
+            //    from {
+            //       width: 120px;
+            //       border: none;
+            //       border: 1px solid $secondary;
+            //    }
+
+            //    to {
+            //       width: calc(100% - 80px);
+            //       border: 5px solid $secondary;
+            //    }
+            // }
+
+            div {
+               animation: rotating 0.4s linear forwards;
+
+               @include keyframes(rotating) {
+                  from {
+                     transform: rotate(0deg);
+                     color: $white;
+                     margin-left: 12px;
+                  }
+
+                  to {
+                     transform: rotate(360deg);
+                     color: $secondary;
+                     margin-left: 3rem;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
