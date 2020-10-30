@@ -61,7 +61,7 @@
          @include fontSize(24, 24, normal);
 
          @include respondTo(tablet) {
-            @include fontSize(18, 18, normal);
+            @include fontSize(15, 15, normal);
          }
 
          &:not(:last-child) {
