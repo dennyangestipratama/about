@@ -1,0 +1,14 @@
+.swal-button-container {
+   margin: 0 auto !important;
+   width: 100%;
+
+   .swal-button {
+      background-color: $primary !important;
+      border-radius: 20px;
+      border: 5px solid $secondary;
+   }
+}
+
+.swal-modal {
+   border-radius: 35px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import emailjs from 'emailjs-com';
 import Fade from 'react-reveal/Fade';
+import Swal from 'sweetalert';
 
 import Input from '../Components/Input'
 import TextArea from '../Components/TextArea'
@@ -47,7 +48,7 @@ export default class Contact extends Component {
                email: '',
                isSubmitting: false,
                isSuccess: true
-            })
+            }, () => Swal("Email Sent!", "Thanks for the message, I will reply it as soon as I can", "success"))
          }, err => {
             this.setState({
                message: '',
@@ -55,7 +56,7 @@ export default class Contact extends Component {
                phone: '',
                email: '',
                isSubmitting: false,
-            })
+            }, () => Swal("Error", "Sorry there's an error, please try again, or you can do it manual by email me at dennyangesti@gmail.com", "error"))
          })
       })
    }
