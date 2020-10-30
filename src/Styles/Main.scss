@@ -6,15 +6,21 @@
 @import 'Base/Reset';
 
 // IMPORTING COMPONENTS FOLDER
-@import 'Components/Button.scss';
-@import 'Components/Input.scss';
-@import 'Components/TextArea.scss';
+@import 'Components/Button';
+@import 'Components/Input';
+@import 'Components/TextArea';
+@import 'Components/ScrollTop';
+
 // IMPORTING LAYOUTS FOLDER
 @import 'Layouts/Section';
+
 // IMPORTING PAGES FOLDER
+@import 'Pages/Hero';
 @import 'Pages/Skills';
 @import 'Pages/Projects';
 @import 'Pages/Contact';
+
 // IMPORTING THEMES FOLDER
+
 // IMPORTING VENDORS FOLDER
 @import 'Vendors/Skeleton';

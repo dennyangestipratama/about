@@ -1,5 +1,7 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import Skeleton from 'react-loading-skeleton'
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 import firebase from '../Services/Firebase'
 import { ReactComponent as CodeSVG } from '../Assets/icons/code.svg'
@@ -31,14 +33,18 @@ export default class Skills extends Component {
    render() {
       const { isLoading, skills } = this.state
       return (
-         <section className="section section-skills">
+         <section id='section-skill' className="section section-skills">
             {isLoading ? null : <CodeSVG />}
             <header>
                <div className="section-title">
                   <div className="title-line"></div>
-                  <h1>Skills</h1>
+                  <Fade left distance={'30px'} duration={1800} delay={200}>
+                     <h1>Skills</h1>
+                  </Fade>
                </div>
-               <h2>These all my current skills and framework that I use as a Frontend Developer to build a website fully works.</h2>
+               <Fade top distance={'30px'} duration={1800}>
+                  <h2>These all my current skills and framework that I use as a Frontend Developer to build a website fully works.</h2>
+               </Fade>
             </header>
             {isLoading ?
                <body className="loading-skills">
@@ -49,13 +55,15 @@ export default class Skills extends Component {
                <body className='skills'>
                   {skills?.map(skill => {
                      return (
-                        <div className="skills-card">
-                           <div className="skills-image-wrapper">
-                              <div className="skills-image"></div>
-                              <img src={skill.image} alt={skill.name} />
+                        <Flip left duration={2200}>
+                           <div className="skills-card">
+                              <div className="skills-image-wrapper">
+                                 <div className="skills-image"></div>
+                                 <img src={skill.image} alt={skill.name} />
+                              </div>
+                              <h4>{skill.name}</h4>
                            </div>
-                           <h4>{skill.name}</h4>
-                        </div>
+                        </Flip>
                      )
                   })}
                </body>

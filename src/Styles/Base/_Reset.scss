@@ -97,3 +97,19 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
+html {
+  background-color: $primary;
+  scroll-behavior: smooth;
+}
+
+.App {
+  max-width: 1400px;
+  background-color: $white;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

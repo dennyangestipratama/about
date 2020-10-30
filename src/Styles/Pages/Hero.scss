@@ -1,0 +1,52 @@
+.section.hero {
+   height: 100vh;
+   margin: auto;
+   @include flexCenterColumn;
+
+   header {
+      position: relative;
+      @include flexCenter;
+   }
+
+   .hero-title {
+      font-weight: bold;
+      color: $primary;
+      text-align: right;
+      @include fontSize(60, 70, normal);
+   }
+
+   .hero-sub {
+      font-weight: normal;
+      color: $primary;
+      @include fontSize(40, 40, normal);
+   }
+
+   .line-hero {
+      width: 5px;
+      height: 300px;
+      background-color: $secondary;
+      margin: 0 30px;
+   }
+
+   ul {
+      margin-top: 90px;
+      list-style: none;
+      @include flexCenter;
+
+      li {
+         text-transform: uppercase;
+         padding-bottom: 0.4rem;
+         color: $primary;
+         cursor: pointer;
+         @include fontSize(24, 24, normal);
+
+         &:not(:last-child) {
+            margin-right: 25px;
+         }
+
+         &:hover {
+            border-bottom: 2px solid $secondary;
+         }
+      }
+   }
+}
