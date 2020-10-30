@@ -3,9 +3,13 @@
    margin: auto;
    @include flexCenterColumn;
 
-   header {
+   >header {
       position: relative;
       @include flexCenter;
+
+      @include respondTo(tablet) {
+         @include flexCenterColumn;
+      }
    }
 
    .hero-title {
@@ -13,12 +17,22 @@
       color: $primary;
       text-align: right;
       @include fontSize(60, 70, normal);
+
+      @include respondTo(tablet) {
+         text-align: left;
+         @include fontSize(40, 55, normal);
+      }
    }
 
    .hero-sub {
       font-weight: normal;
       color: $primary;
       @include fontSize(40, 40, normal);
+
+      @include respondTo(tablet) {
+         text-align: right;
+         @include fontSize(30, 45, normal);
+      }
    }
 
    .line-hero {
@@ -26,6 +40,12 @@
       height: 300px;
       background-color: $secondary;
       margin: 0 30px;
+
+      @include respondTo(tablet) {
+         margin: 10px 0;
+         height: 3px;
+         width: 100%;
+      }
    }
 
    ul {
@@ -39,6 +59,10 @@
          color: $primary;
          cursor: pointer;
          @include fontSize(24, 24, normal);
+
+         @include respondTo(tablet) {
+            @include fontSize(18, 18, normal);
+         }
 
          &:not(:last-child) {
             margin-right: 25px;

@@ -6,4 +6,8 @@
    color: $white;
    cursor: pointer;
    @include fontSize(14, 22, normal);
+
+   @include respondTo(tablet) {
+      @include fontSize(11, 20, normal);
+   }
 }

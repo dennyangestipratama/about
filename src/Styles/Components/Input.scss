@@ -6,6 +6,13 @@
    padding: 8px 15px;
    margin-bottom: 25px;
    @include fontSize(18, 26, -0.015);
+
+   @include respondTo(tablet) {
+      width: 100%;
+      margin-bottom: 20px;
+      @include fontSize(12, 23, -0.015);
+
+   }
 }
 
 .label {
@@ -14,4 +21,10 @@
    margin-bottom: 15px;
    text-transform: uppercase;
    @include fontSize(18, 26, -0.015);
+
+   @include respondTo(tablet) {
+      margin-bottom: 10px;
+      @include fontSize(14, 23, -0.015);
+
+   }
 }

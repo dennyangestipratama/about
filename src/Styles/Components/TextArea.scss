@@ -4,4 +4,9 @@
    border-radius: 21px;
    padding: 8px 15px;
    @include fontSize(18, 26, -0.015);
+
+   @include respondTo(tablet) {
+      width: 100%;
+      @include fontSize(12, 23, -0.015);
+   }
 }

@@ -7,6 +7,11 @@
    grid-template-columns: 1fr 1fr 1fr 1fr;
    gap: 95px 65px;
 
+   @include respondTo(tablet) {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px 10px;
+   }
+
    &-card {
       position: relative;
       @include flexCenterColumn;
@@ -20,11 +25,33 @@
                from {
                   transform: rotateZ(0deg) scale(1.2);
                   box-shadow: 0px 0px 10px 10px rgba($color: $secondary, $alpha: 0.5);
+
+                  @include respondTo(tablet) {
+                     transform: scale(1);
+                  }
                }
 
                to {
                   transform: rotateZ(360deg) scale(1.2);
                   box-shadow: 0px 0px 20px 10px rgba($color: $secondary, $alpha: 0.5);
+
+                  @include respondTo(tablet) {
+                     transform: scale(1);
+                  }
+               }
+            }
+
+            @include respondTo(tablet) {
+               @include keyframes(rotate) {
+                  from {
+                     transform: rotateZ(0deg) scale(1);
+                     box-shadow: 0px 0px 10px 10px rgba($color: $secondary, $alpha: 0.5);
+                  }
+
+                  to {
+                     transform: rotateZ(360deg) scale(1);
+                     box-shadow: 0px 0px 20px 10px rgba($color: $secondary, $alpha: 0.5);
+                  }
                }
             }
          }
@@ -34,6 +61,12 @@
          margin-top: 30px;
          color: $primary;
          @include fontSize(24, 24, normal);
+
+         @include respondTo(tablet) {
+            margin-top: 15px;
+            font-weight: normal;
+            @include fontSize(16, 16, normal);
+         }
       }
    }
 
@@ -48,13 +81,24 @@
       overflow: hidden;
       @include flexCenter;
 
+      @include respondTo(tablet) {
+         width: 120px;
+         height: 120px;
+         border-radius: 30px;
+      }
+
       &-wrapper {
          position: relative;
 
          img {
             margin: auto;
             z-index: 0;
-            @include absolute(0, 0, 0, 0)
+
+            @include absolute(0, 0, 0, 0);
+
+            @include respondTo(tablet) {
+               width: 50%;
+            }
          }
       }
    }

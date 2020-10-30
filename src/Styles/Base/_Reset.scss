@@ -107,6 +107,10 @@ html {
   max-width: 1400px;
   background-color: $white;
   margin: auto;
+
+  @include respondTo(tablet) {
+    max-width: 100%;
+  }
 }
 
 a {
