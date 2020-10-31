@@ -3,6 +3,7 @@ import ArrowSVG from '../Assets/icons/arrow-up.svg'
 
 export default class ScrollTop extends Component {
    scrollToTop = () => {
+      console.log(window.location.hash)
       window.scrollTo({ top: 0, behavior: 'smooth' })
    }
    render() {

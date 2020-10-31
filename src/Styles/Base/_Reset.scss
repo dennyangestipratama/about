@@ -101,6 +101,7 @@ button {
 html {
   background-color: $primary;
   scroll-behavior: smooth;
+  @include customScroll;
 }
 
 .App {
