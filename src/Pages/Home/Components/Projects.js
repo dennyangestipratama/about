@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import Fade from 'react-reveal/Fade';
 
-import firebase from '../Services/Firebase'
-import Button from '../Components/Button'
-import { ReactComponent as WorkSVG } from '../Assets/icons/work.svg'
+import firebase from '../../../Services/Firebase'
+import Button from '../../../Components/Button'
+import { ReactComponent as WorkSVG } from '../../../Assets/icons/work.svg'
 
 export default class Projects extends Component {
    constructor(props) {
@@ -63,7 +63,7 @@ export default class Projects extends Component {
                               <Button
                                  arrow={true}
                                  text={project.completed ? "See Detail" : "On Progress"}
-                                 disabled={project.completed ? false : true}
+                                 to={`/project/${project.name}`}
                               />
                            </div>
                         </Fade>

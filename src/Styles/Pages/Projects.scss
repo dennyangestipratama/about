@@ -2,6 +2,46 @@
    padding-bottom: 5rem;
 }
 
+.project-detail {
+   padding: 2rem 0;
+
+   @include respondTo(tablet) {
+      padding: 20px;
+   }
+
+   &-img {
+      padding: 0 150px;
+      margin-bottom: 50px;
+      @include flexBetween;
+      flex-direction: row-reverse;
+
+      @include respondTo(tablet) {
+         padding: 0 20px;
+      }
+
+      >img {
+         width: 170px;
+
+         &:first-child {
+            width: 60px;
+         }
+      }
+   }
+
+   &-carousel {
+      position: relative;
+
+      .background {
+         margin: auto;
+         z-index: -1;
+         width: 1140px;
+         height: 366px;
+         background-color: $primary;
+         border-radius: 20px;
+         @include absolute(0, 0, 0, 0)
+      }
+   }
+}
 
 .projects {
    display: grid;

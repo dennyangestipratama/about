@@ -27,4 +27,32 @@
          width: 50%;
       }
    }
+
+   &.top {
+      animation: rotate-arrow-up 0.5s linear forwards;
+
+      @include keyframes(rotate-arrow-up) {
+         from {
+            transform: rotate(-90deg);
+         }
+
+         to {
+            transform: rotate(0deg);
+         }
+      }
+   }
+
+   &.back {
+      animation: rotate-arrow-back 0.5s linear forwards;
+
+      @include keyframes(rotate-arrow-back) {
+         from {
+            transform: rotate(90deg);
+         }
+
+         to {
+            transform: rotate(0deg);
+         }
+      }
+   }
 }

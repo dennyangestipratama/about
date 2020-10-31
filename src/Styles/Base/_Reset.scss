@@ -35,11 +35,18 @@ dd {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
   font-family: 'Poppins', sans-serif;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  max-width: 1400px;
+  min-height: 100vh;
+  background-color: $white;
+  margin: auto;
+
+  @include respondTo(tablet) {
+    max-width: 100%;
+  }
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -104,15 +111,7 @@ html {
   @include customScroll;
 }
 
-.App {
-  max-width: 1400px;
-  background-color: $white;
-  margin: auto;
-
-  @include respondTo(tablet) {
-    max-width: 100%;
-  }
-}
+.App {}
 
 a {
   text-decoration: none;

@@ -55,51 +55,149 @@
    "projects": [
       {
          "ID": 1,
-         "name": "Shapestone",
+         "name": "shapestone",
          "completed": true,
+         "live": true,
          "logoIMG": "https://svgshare.com/i/R1E.svg",
          "textIMG": "https://svgshare.com/i/R1T.svg",
-         "description": "Landing Page Company Profile Project, build with HTML,CSS, React JS and EmailJS"
+         "description": "Landing Page Company Profile Project, build with HTML,CSS, React JS and EmailJS",
+         "url": "https://shapestone.netlify.app/",
+         "screenshots": [
+            {
+               "ID": 1,
+               "imageURL": "https://i.ibb.co/xC4jnyC/shapestone-1.png"
+            },
+            {
+               "ID": 2,
+               "imageURL": "https://i.ibb.co/kQWXBHW/shapestone-2.png"
+            },
+            {
+               "ID": 3,
+               "imageURL": "https://i.ibb.co/xYZ5syD/shapestone-3.png"
+            },
+            {
+               "ID": 4,
+               "imageURL": "https://i.ibb.co/jM9CMGk/shapestone-4.png"
+            }
+         ]
       },
       {
          "ID": 2,
-         "name": "Mespo",
+         "name": "mespo",
          "completed": false,
+         "live": false,
          "logoIMG": "https://svgshare.com/i/R26.svg",
          "textIMG": "https://svgshare.com/i/R2G.svg",
-         "description": "Project to build dashboard company, build with React Native and React Native for Web"
+         "description": "Project to build dashboard company, build with React Native and React Native for Web",
+         "url": "",
+         "screenshots": []
       },
       {
          "ID": 3,
-         "name": "Doogether",
+         "name": "doogether-web",
          "completed": true,
+         "live": true,
          "logoIMG": "https://svgshare.com/i/R20.svg",
          "textIMG": "https://svgshare.com/i/R0a.svg",
-         "description": "Web for Doogether Company profile, you can book a class from here also."
+         "description": "Web for Doogether Company profile, you can book a class from here also.",
+         "url": "https://doogether.id/",
+         "screenshots": [
+            {
+               "ID": 1,
+               "imageURL": "https://i.ibb.co/KytfWNL/web-1.png"
+            },
+            {
+               "ID": 2,
+               "imageURL": "https://i.ibb.co/1Tspz1n/web-2.png"
+            },
+            {
+               "ID": 3,
+               "imageURL": "https://i.ibb.co/z6BTfQR/web-3.png"
+            },
+            {
+               "ID": 4,
+               "imageURL": "https://i.ibb.co/3mJzSzf/web-4.png"
+            },
+            {
+               "ID": 5,
+               "imageURL": "https://i.ibb.co/37kYTsj/web-5.png"
+            },
+            {
+               "ID": 6,
+               "imageURL": "https://i.ibb.co/W3r4SSz/web-6.png"
+            }
+         ]
       },
       {
          "ID": 4,
-         "name": "Doogether",
+         "name": "doogether-challenge",
          "completed": true,
+         "live": true,
          "logoIMG": "https://svgshare.com/i/R20.svg",
          "textIMG": "https://svgshare.com/i/R0a.svg",
-         "description": "DOOgether Challenge Platform, is a challenge for user to compete with other user to get the grand prize"
+         "description": "DOOgether Challenge Platform, is a challenge for user to compete with other user to get the grand prize",
+         "url": "https://challenge.doogether.id/",
+         "screenshots": [
+            {
+               "ID": 1,
+               "imageURL": "https://i.ibb.co/pJnMyhx/challenge-1.png"
+            },
+            {
+               "ID": 2,
+               "imageURL": "https://i.ibb.co/WvKCZt7/challenge-2.png"
+            },
+            {
+               "ID": 3,
+               "imageURL": "https://i.ibb.co/vvpvZYF/challenge-3.png"
+            }
+         ]
       },
       {
          "ID": 5,
-         "name": "Doogether",
-         "completed": true,
+         "name": "doogether-dashboard",
+         "completed": false,
+         "live": false,
          "logoIMG": "https://svgshare.com/i/R20.svg",
          "textIMG": "https://svgshare.com/i/R0a.svg",
-         "description": "DOOgether Dashboard Platform, create for Venue, Partner and Admin to handle what they need."
+         "description": "DOOgether Dashboard Platform, create for Venue, Partner and Admin to handle what they need.",
+         "url": "https://admin.doogether.id/",
+         "screenshots": []
       },
       {
          "ID": 6,
-         "name": "Doogether",
+         "name": "doogether-dirumahaja",
          "completed": true,
+         "live": true,
          "logoIMG": "https://svgshare.com/i/R20.svg",
          "textIMG": "https://svgshare.com/i/R0a.svg",
-         "description": "Dirumahaja Platform is a web for watching free videos from DOOgether Venue’s Partner"
+         "description": "Dirumahaja Platform is a web for watching free videos from DOOgether Venue’s Partner",
+         "url": "https://dirumahaja.doogether.id/",
+         "screenshots": [
+            {
+               "ID": 1,
+               "imageURL": "https://i.ibb.co/CKDnsBs/dirumahaja-1.png"
+            },
+            {
+               "ID": 2,
+               "imageURL": "https://i.ibb.co/nDQPKw1/dirumahaja-2.png"
+            },
+            {
+               "ID": 3,
+               "imageURL": "https://i.ibb.co/PYkg2bt/dirumahaja-3.png"
+            },
+            {
+               "ID": 4,
+               "imageURL": "https://i.ibb.co/0QNnR8n/dirumahaja-4.png"
+            },
+            {
+               "ID": 5,
+               "imageURL": "https://i.ibb.co/8PQ0xrK/dirumahaja-5.png"
+            },
+            {
+               "ID": 6,
+               "imageURL": "https://i.ibb.co/BjNLMdR/dirumahaja-6.png"
+            }
+         ]
       }
    ]
 }

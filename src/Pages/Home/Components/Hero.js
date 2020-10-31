@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Fade from 'react-reveal/Fade';
 
-import Nav from '../Layouts/Nav'
+import Nav from '../../../Layouts/Nav'
 
 export default class Hero extends Component {
    render() {

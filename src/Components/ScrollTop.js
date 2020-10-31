@@ -8,7 +8,7 @@ export default class ScrollTop extends Component {
    }
    render() {
       return (
-         <div className='scroll-top' onClick={() => this.scrollToTop()}>
+         <div className='scroll-top top' onClick={() => this.scrollToTop()}>
             <img src={ArrowSVG} alt="arrow" />
          </div>
       )

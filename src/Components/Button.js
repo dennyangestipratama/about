@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const Button = ({ text, disabled, onClick, arrow }) => {
+const Button = ({ text, onClick, arrow, to }) => {
    return (
-      <button
-         onClick={onClick}
-         disabled={disabled}
-         className='button'
-      >
-         {text} {arrow ? <div>&gt;</div> : null}
-      </button>
+      <Link to={to}>
+         <button
+            onClick={onClick}
+            className='button'
+         >
+            {text} {arrow ? <div>&gt;</div> : null}
+         </button>
+      </Link>
    )
 }
 

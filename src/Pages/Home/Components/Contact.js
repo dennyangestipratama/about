@@ -3,12 +3,12 @@ import emailjs from 'emailjs-com';
 import Fade from 'react-reveal/Fade';
 import Swal from 'sweetalert';
 
-import Input from '../Components/Input'
-import TextArea from '../Components/TextArea'
-import SendSVG from '../Assets/icons/send.svg'
-import { SERVICE_ID, TEMPLATE_ID, USER_ID } from '../Services/EmailJS'
+import Input from '../../../Components/Input'
+import TextArea from '../../../Components/TextArea'
+import SendSVG from '../../../Assets/icons/send.svg'
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from '../../../Services/EmailJS'
 
-import { ReactComponent as MailSVG } from '../Assets/icons/mail.svg'
+import { ReactComponent as MailSVG } from '../../../Assets/icons/mail.svg'
 
 export default class Contact extends Component {
    state = {

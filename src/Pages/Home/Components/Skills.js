@@ -3,8 +3,8 @@ import Skeleton from 'react-loading-skeleton'
 import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 
-import firebase from '../Services/Firebase'
-import { ReactComponent as CodeSVG } from '../Assets/icons/code.svg'
+import firebase from '../../../Services/Firebase'
+import { ReactComponent as CodeSVG } from '../../../Assets/icons/code.svg'
 
 export default class Skills extends Component {
    constructor(props) {
