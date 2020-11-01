@@ -4,7 +4,7 @@ import firebase from '../../Services/Firebase'
 import Carousel from '../../Components/Carousel'
 import Back from '../../Components/Back'
 import LiveSVG from '../../Assets/icons/live.svg'
-
+import UnderConstruction from './Components/UnderConstruction'
 
 export default class index extends Component {
    constructor(props) {
@@ -50,20 +50,22 @@ export default class index extends Component {
                      <img src={project?.logoIMG} alt={`${project.name}-logo`} />
                      <img src={project?.textIMG} alt={`${project.name}-text`} />
                   </div>
-                  <div className="project-detail-carousel">
-                     <a href={project.url} target='_blank' rel="noopener noreferrer">
-                        <img src={LiveSVG} alt="live" />
-                     </a>
-                     <Carousel>
-                        {screenshots.map(screenshot => {
-                           return (
-                              <Fragment>
-                                 <img src={screenshot.imageURL} alt='screenshot' />
-                              </Fragment>
-                           )
-                        })}
-                     </Carousel>
-                  </div>
+                  {!screenshots ? <UnderConstruction /> :
+                     <div className="project-detail-carousel">
+                        <a href={project.url} target='_blank' rel="noopener noreferrer">
+                           <img src={LiveSVG} alt="live" />
+                        </a>
+                        <Carousel>
+                           {screenshots.map(screenshot => {
+                              return (
+                                 <Fragment>
+                                    <img src={screenshot.imageURL} alt='screenshot' />
+                                 </Fragment>
+                              )
+                           })}
+                        </Carousel>
+                     </div>
+                  }
                </div>
             }
          </div>

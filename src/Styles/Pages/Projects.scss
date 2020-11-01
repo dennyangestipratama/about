@@ -122,3 +122,83 @@
       }
    }
 }
+
+.under-construction {
+   position: relative;
+   padding: 0 5rem;
+   @include flexCenterColumn;
+   align-items: flex-start;
+   margin: auto;
+   height: 50vh;
+
+   @include respondTo(tablet) {
+      padding: 0;
+      max-width: 100vw;
+      overflow: hidden;
+   }
+
+   &-title {
+      position: relative;
+      z-index: 3;
+      margin: 0 auto;
+      font-weight: bold;
+      color: $primary;
+      text-align: left;
+      width: 525px;
+      @include fontSize(48, 72, 0.3);
+
+      @include respondTo(tablet) {
+         width: auto;
+         font-weight: normal;
+         @include fontSize(28, 28, 0.2);
+      }
+   }
+
+   &-subtitle {
+      position: relative;
+      z-index: 3;
+      font-weight: 600;
+      width: 520px;
+      margin: 0 auto;
+      color: $primary;
+      @include fontSize(22, 33, 0.12);
+
+      @include respondTo(tablet) {
+         width: auto;
+         text-align: center;
+         margin-top: 10px;
+         font-weight: normal;
+         @include fontSize(14, 18, 0.32);
+      }
+   }
+
+   .construction {
+      position: absolute;
+      width: 352px;
+      height: 352px;
+      right: 25rem;
+      top: 2rem;
+      opacity: 0.4;
+      z-index: 0;
+
+      @include respondTo(tablet) {
+         top: 0;
+         right: -10rem;
+      }
+   }
+
+   .warning {
+      position: absolute;
+      left: 28rem;
+      top: 15rem;
+      opacity: 0.4;
+      width: 122px;
+      height: 122px;
+      z-index: 0;
+
+      @include respondTo(tablet) {
+         top: 9rem;
+         left: -3rem;
+      }
+   }
+}

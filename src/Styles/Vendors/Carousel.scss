@@ -15,6 +15,11 @@
          align-items: center;
          justify-content: center;
          flex-direction: column;
+
+         @include respondTo(tablet) {
+            width: 589px !important;
+            height: 280px !important;
+         }
       }
 
       >a>img {
@@ -27,8 +32,19 @@
          height: 240px !important;
          border: none;
 
+         @include respondTo(tablet) {
+            width: 100px !important;
+            height: 230px !important;
+            left: 5.5rem;
+            transform: rotate(0deg);
+         }
+
          &:hover {
             animation: zoom 1s linear forwards;
+
+            @include respondTo(tablet) {
+               animation: none;
+            }
 
             @include keyframes(zoom) {
 
@@ -40,10 +56,8 @@
                   transform: scale(1.1) rotate(-30deg);
                }
             }
-         }
 
-         @include respondTo(tablet) {
-            display: none;
+
          }
       }
    }
