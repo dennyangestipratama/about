@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
+import ReactGA from 'react-ga';
 
+import { MEASUREMENT_ID } from '../../Services/EmailJS'
 import firebase from '../../Services/Firebase'
 import Carousel from '../../Components/Carousel'
 import Back from '../../Components/Back'
@@ -9,7 +11,7 @@ import UnderConstruction from './Components/UnderConstruction'
 export default class index extends Component {
    constructor(props) {
       super(props)
-
+      ReactGA.initialize(MEASUREMENT_ID);
       this.state = {
          projectName: props.match.params.name,
          project: null,
@@ -20,6 +22,7 @@ export default class index extends Component {
 
    componentDidMount() {
       window.scrollTo(0, 0)
+      ReactGA.pageview(window.location.pathname + window.location.search)
       this.fetchProjects()
    }
 
